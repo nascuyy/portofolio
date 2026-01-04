@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kopi Nusantara</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS LANGSUNG -->
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      /* HERO / BANNER */
+      .hero {
+        height: 100vh;
+        background: url("https://images.unsplash.com/photo-1447933601403-0c6688de566e") center/cover no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .hero-content {
+        position: relative;
+        color: white;
+        text-align: center;
+        width: 100%;
+      }
+
+      .btn-coffee {
+        background: #c59d5f;
+        color: black;
+        font-weight: 600;
+        border: none;
+      }
+
+      .btn-coffee:hover {
+        background: #b0894f;
+        color: white;
+      }
+
+      /* PRODUCT CARD */
+      .coffee-card {
+        border: none;
+        transition: 0.4s;
+        overflow: hidden;
+      }
+
+      .coffee-card img {
+        height: 230px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .coffee-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .coffee-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 18px;
+        color: #6f4e37;
+      }
+
+      footer {
+        background: #111;
+        color: #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Kopi Nusantara</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1 class="fw-bold">Kopi Premium Nusantara</h1>
+        <p class="text-light">Aroma kuat, rasa nikmat, kualitas terbaik ☕</p>
+        <a href="#produk" class="btn btn-coffee mt-3">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Produk Unggulan</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card coffee-card">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5>Kopi Arabika</h5>
+                <p class="text-muted">Asam seimbang & aroma floral</p>
+                <span class="price">Rp 35.000</span>
+                <button class="btn btn-outline-dark w-100 mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card coffee-card">
+              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5>Kopi Robusta</h5>
+                <p class="text-muted">Rasa kuat & pahit khas</p>
+                <span class="price">Rp 30.000</span>
+                <button class="btn btn-outline-dark w-100 mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card coffee-card">
+              <img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5>Kopi Blend</h5>
+                <p class="text-muted">Arabika + Robusta</p>
+                <span class="price">Rp 32.000</span>
+                <button class="btn btn-outline-dark w-100 mt-3">Beli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="bg-dark text-white py-5 text-center">
+      <h3>Hubungi Kami</h3>
+      <p>📞 08xxxxxxxx | ✉ kopinusantara@gmaii.com</p>
+      <a href="index.html" class="btn btn-coffee mt-3">Back</a>
+    </section>
+
+    <footer class="text-center py-3">© 2026 Kopi Nusantara</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

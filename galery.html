@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miloqu Design Gallery</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #0f172a;
+        color: #e5e7eb;
+      }
+
+      /* HERO */
+      .hero {
+        height: 70vh;
+        background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .hero-content {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* GALLERY */
+      .design-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+      .design-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .design-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.4s;
+        text-align: center;
+      }
+
+      .design-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .design-card:hover .design-overlay {
+        opacity: 1;
+      }
+
+      .badge-design {
+        background: #38bdf8;
+        color: #020617;
+      }
+
+      footer {
+        background: #020617;
+        color: #94a3b8;
+      }
+      
+      img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.design-card img {
+  will-change: transform;
+}
+
+.project-panel {
+  contain: layout paint;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1 class="fw-bold">Miloqu Design Works</h1>
+        <p class="text-secondary">Kumpulan desain selama di Miloqu</p>
+        <a href="#poster" class="btn btn-primary mt-3">Poster</a>
+        <a href="#pattern" class="btn btn-primary mt-3">Pattern</a>
+        <a href="#businesscard" class="btn btn-primary mt-3">Business Card</a>
+        <a href="#template" class="btn btn-primary mt-3">Template</a>
+        <a href="#sertifikat" class="btn btn-primary mt-3">Sertifikat</a> <br>
+        <a href="index.html" class="btn btn-primary mt-3">Back</a>
+      </div>
+    </section>
+
+    <!-- GALLERY Poster -->
+    <section>
+      <section class="py-5">
+        <div class="container">
+          <h2 id="poster" class="text-center fw-bold mb-5">Poster</h2>
+
+          <div class="row g-4">
+            <!-- DESIGN 1 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p1">
+                <img src="img/galery/poster/bbb.jpg" />
+                <div class="design-overlay">
+                  <h5>Boboiboy</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 2 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p2">
+                <img src="img/galery/poster/bbbr.jpg" />
+                <div class="design-overlay">
+                  <h5>Boboiboy</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 3 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p3">
+                <img src="img/galery/poster/bm.jpg" />
+                <div class="design-overlay">
+                  <h5>Badtz Maru</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 4 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p4">
+                <img src="img/galery/poster/bnha.jpg" />
+                <div class="design-overlay">
+                  <h5>Bnha</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 5 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p5">
+                <img src="img/galery/poster/fuji.jpg" />
+                <div class="design-overlay">
+                  <h5>Gunung Fuji</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 6 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p6">
+                <img src="img/galery/poster/kny.jpg" />
+                <div class="design-overlay">
+                  <h5>Kimetsu</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 7 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p7">
+                <img src="img/galery/poster/m.jpg" />
+                <div class="design-overlay">
+                  <h5>Luffy</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 8 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p8">
+                <img src="img/galery/poster/mc.jpg" />
+                <div class="design-overlay">
+                  <h5>Kimetsu</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 9 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p9">
+                <img src="img/galery/poster/mt.jpg" />
+                <div class="design-overlay">
+                  <h5>Rudeus</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 10 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p10">
+                <img src="img/galery/poster/obanai.jpg" />
+                <div class="design-overlay">
+                  <h5>Obanai</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 11 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p11">
+                <img src="img/galery/poster/pd.jpg" />
+                <div class="design-overlay">
+                  <h5>Kimetsu</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 12 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p12">
+                <img src="img/galery/poster/pkny.jpg" />
+                <div class="design-overlay">
+                  <h5>Kimetsu</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 13 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p13">
+                <img src="img/galery/poster/pl.jpg" />
+                <div class="design-overlay">
+                  <h5>Wanted</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 14 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p14">
+                <img src="img/galery/poster/pn.jpg" />
+                <div class="design-overlay">
+                  <h5>Naruto</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 15 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p15">
+                <img src="img/galery/poster/postercar.jpg" />
+                <div class="design-overlay">
+                  <h5>Porsche</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 16 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p16">
+                <img src="img/galery/poster/POSTERCONCERT.jpg" />
+                <div class="design-overlay">
+                  <h5>Konser</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 17 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p17">
+                <img src="img/galery/poster/posterpray.jpg" />
+                <div class="design-overlay">
+                  <h5>Pray</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 18 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p18">
+                <img src="img/galery/poster/posteresport.jpg" />
+                <div class="design-overlay">
+                  <h5>Esports</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 19 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p19">
+                <img src="img/galery/poster/posterwinter.jpg" />
+                <div class="design-overlay">
+                  <h5>Winter</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 20 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p20">
+                <img src="img/galery/poster/ps.jpg" />
+                <div class="design-overlay">
+                  <h5>Summer</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 21 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p21">
+                <img src="img/galery/poster/pw2.jpg" />
+                <div class="design-overlay">
+                  <h5>Winter 2</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 22 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p22">
+                <img src="img/galery/poster/sanrio.jpg" />
+                <div class="design-overlay">
+                  <h5>Sanrio</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 23 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p23">
+                <img src="img/galery/poster/waguri.jpg" />
+                <div class="design-overlay">
+                  <h5>Waguri</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 24 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#p24">
+                <img src="img/galery/poster/wagurik.jpg" />
+                <div class="design-overlay">
+                  <h5>Waguri 2</h5>
+                  <span class="badge badge-design mt-2">Poster</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- GALLERY Poster -->
+
+    <!-- MODAL DESIGN POSTER -->
+    <section>
+      <div class="modal fade" id="p1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/bbb.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/bbbr.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/bm.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/bnha.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/fuji.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/kny.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/m.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p8" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/mc.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p9" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/mt.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p10" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/obanai.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p11" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/pd.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p12" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/pkny.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p13" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/pl.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p14" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/pn.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p15" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/postercar.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p16" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/POSTERCONCERT.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p17" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/posterpray.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p18" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/posteresport.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p19" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/posterwinter.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p20" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/ps.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p21" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/pw2.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p22" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/sanrio.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p23" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/waguri.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="p24" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/poster/wagurik.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL DESIGN POSTER -->
+
+
+    <!-- GALLERY Pattern -->
+    <section>
+      <section class="py-5">
+        <div class="container">
+          <h2 id="pattern" class="text-center fw-bold mb-5">Pattern</h2>
+
+          <div class="row g-4">
+            <!-- DESIGN 1 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa1">
+                <img src="img/galery/pattern/bma.jpg" />
+                <div class="design-overlay">
+                  <h5>Bunga Matahari</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 2 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa2">
+                <img src="img/galery/pattern/dm.jpg" />
+                <div class="design-overlay">
+                  <h5>Diamond</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 3 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa3">
+                <img src="img/galery/pattern/patterng.jpg" />
+                <div class="design-overlay">
+                  <h5>Geometric</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 4 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa4">
+                <img src="img/galery/pattern/PATTERNGEOMETRIC.jpg" />
+                <div class="design-overlay">
+                  <h5>Star</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 5 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa5">
+                <img src="img/galery/pattern/patternhexa.jpg" />
+                <div class="design-overlay">
+                  <h5>Hexagon</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 6 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa6">
+                <img src="img/galery/pattern/pb.jpg" />
+                <div class="design-overlay">
+                  <h5>Star</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 7 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa7">
+                <img src="img/galery/pattern/pgc.jpg" />
+                <div class="design-overlay">
+                  <h5>Diamond</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 8 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa8">
+                <img src="img/galery/pattern/pgd.jpg" />
+                <div class="design-overlay">
+                  <h5>Diamond</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 9 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa9">
+                <img src="img/galery/pattern/ph.jpg" />
+                <div class="design-overlay">
+                  <h5>Love</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 10 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa10">
+                <img src="img/galery/pattern/pil.jpg" />
+                <div class="design-overlay">
+                  <h5>Ilusi</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 11 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa11">
+                <img src="img/galery/pattern/pk.jpg" />
+                <div class="design-overlay">
+                  <h5>Kucing</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 12 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa12">
+                <img src="img/galery/pattern/pm.jpg" />
+                <div class="design-overlay">
+                  <h5>Batik</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- DESIGN 13 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa13">
+                <img src="img/galery/pattern/sgt.jpg" />
+                <div class="design-overlay">
+                  <h5>Segitiga</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 14 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#pa14">
+                <img src="img/galery/pattern/spombob.jpg" />
+                <div class="design-overlay">
+                  <h5>Spongebob</h5>
+                  <span class="badge badge-design mt-2">Pattern</span>
+                </div>
+              </div>
+            </div>
+      </section>
+    </section>
+    <!-- GALLERY Pattern -->
+
+    <!-- MODAL DESIGN PATTERN -->
+    <section>
+      <div class="modal fade" id="pa1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/bma.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/dm.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/patterng.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/PATTERNGEOMETRIC.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/patternhexa.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pb.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pgc.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa8" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pgd.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa9" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/ph.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa10" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pil.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa11" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pk.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa12" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/pm.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa13" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/sgt.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pa14" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/pattern/spombob.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL DESIGN PATTERN -->
+
+
+    <!-- Gallery Business Card -->
+    <section>
+    <section class="py-5">
+        <div class="container">
+          <h2 id="businesscard" class="text-center fw-bold mb-5">Business Card</h2>
+
+          <div class="row g-4">
+            <!-- DESIGN 1 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b1">
+                <img src="img/galery/businesscard/bc.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 1</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 2 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b2">
+                <img src="img/galery/businesscard/bc2.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 2</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 3 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b3">
+                <img src="img/galery/businesscard/bc3.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 3</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- DESIGN 4 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b4">
+                <img src="img/galery/businesscard/bc4.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 4</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 5 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b5">
+                <img src="img/galery/businesscard/bc5.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 5</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 6 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b6">
+                <img src="img/galery/businesscard/bc6.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 6</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- DESIGN 7 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b7">
+                <img src="img/galery/businesscard/bc7.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 7</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 8 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#b8">
+                <img src="img/galery/businesscard/BUSINESCARD.jpg" />
+                <div class="design-overlay">
+                  <h5>Business Card 8</h5>
+                  <span class="badge badge-design mt-2">Business Card</span>
+                </div>
+              </div>
+            </div>
+            </div>
+    </section>
+    </section>
+    <!-- Gallery Business Card -->
+
+    <!-- MODAL DESIGN BUSINESS CARD -->
+    <section>
+      <div class="modal fade" id="b1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="b2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc2.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc3.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc4.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc5.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc6.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/bc7.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+        <div class="modal fade" id="b8" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/businesscard/BUSINESCARD.jpg" class="img-fluid" />
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- MODAL DESIGN BUSINESS CARD -->
+
+    <!-- GALLERY Template -->
+      <section class="py-5">
+        <div class="container">
+          <h2 id="template" class="text-center fw-bold mb-5">Template</h2>
+
+          <div class="row g-4 justify-content-center">
+            <!-- DESIGN 1 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#t1">
+                <img src="img/galery/template/stickertemplate.jpg" />
+                <div class="design-overlay">
+                  <h5>Sticker</h5>
+                  <span class="badge badge-design mt-2">Quotes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESIGN 2 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#t2">
+                <img src="img/galery/template/template instagram quotes.jpg" />
+                <div class="design-overlay">
+                  <h5>Label</h5>
+                  <span class="badge badge-design mt-2">Template</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- GALLERY Template -->
+
+    <!-- MODAL DESIGN TEMPLATE -->
+    <section>
+      <div class="modal fade" id="t1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/template/stickertemplate.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="t2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/template/template instagram quotes.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL DESIGN TEMPLATE -->
+
+    <!-- GALLERY Sertifikat -->
+     <section class="py-5">
+        <div class="container">
+          <h2 id="sertifikat" class="text-center fw-bold mb-5">Sertifikat</h2>
+
+          <div class="row g-4 justify-content-center">
+            <!-- DESIGN 1 -->
+            <div class="col-md-4">
+              <div class="design-card" data-bs-toggle="modal" data-bs-target="#s1">
+                <img src="img/galery/sertifikat/certificate.jpg" />
+                <div class="design-overlay">
+                  <h5>Sertifikat</h5>
+                  <span class="badge badge-design mt-2">Sertifikat</span>
+                </div>
+              </div>
+            </div>
+      </section>
+    <!-- GALLERY Sertifikat -->
+
+    <!-- MODAL DESIGN SERTIFIKAT -->
+    <section>
+      <div class="modal fade" id="s1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <img src="img/galery/sertifikat/certificate.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL DESIGN SERTIFIKAT -->
+
+
+    <footer class="text-center py-3">© 2026 Miloqu Design Portfolio Nashrullah</footer>
+    <script>
+/* ===============================
+   FAST TAB SYSTEM (NO CLICK BUG)
+================================ */
+
+(() => {
+  const tabs = document.querySelectorAll(".project-tabs button");
+  const panels = document.querySelectorAll(".project-panel");
+
+  if (!tabs.length || !panels.length) return;
+
+  function activate(id) {
+    tabs.forEach(b => b.classList.remove("active"));
+    panels.forEach(p => p.classList.remove("active"));
+
+    document.querySelector(`[data-target="${id}"]`)?.classList.add("active");
+    document.getElementById(id)?.classList.add("active");
+  }
+
+  // AUTO SHOW FIRST TAB (INI YANG FIX BUG KAMU)
+  requestAnimationFrame(() => activate(panels[0].id));
+
+  tabs.forEach(btn => {
+    btn.addEventListener("click", () => activate(btn.dataset.target), {
+      passive: true
+    });
+  });
+})();
+
+
+/* ===============================
+   IMAGE MODAL (LIGHTWEIGHT)
+================================ */
+
+(() => {
+  const modalImg = document.getElementById("modalImage");
+  if (!modalImg) return;
+
+  document.addEventListener("click", e => {
+    const card = e.target.closest(".design-card");
+    if (!card) return;
+    modalImg.src = card.dataset.img;
+  }, { passive: true });
+})();
+
+
+/* ===============================
+   SCROLL REVEAL (1 OBSERVER ONLY)
+================================ */
+
+(() => {
+  const revealEls = document.querySelectorAll(
+    ".project-card, .design-card, .empty-card"
+  );
+
+  if (!revealEls.length) return;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealEls.forEach(el => observer.observe(el));
+})();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

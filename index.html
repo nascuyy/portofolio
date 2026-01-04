@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nashrullah | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="nav">
+      <div class="brand">Nash<span>Dev</span></div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <div class="hero-card">
+          <div class="hero-text">
+            <small class="intro">HELLO, I'M</small>
+            <h1>Nashrullah</h1>
+            <h2><span id="typing">Web Developer</span></h2>
+
+            <p>I build clean and responsive websites with modern UI and smooth animations.</p>
+
+            <a href="#" class="btn-outline">Get In Touch</a>
+          </div>
+
+          <div class="hero-img">
+            <img src="img/pp.jpg" alt="Profile" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="about-section" id="about">
+        <div class="about-card">
+          <!-- TAB BUTTON -->
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="about">👤 About Me</button>
+            <button class="tab-btn" data-tab="skills">💻 Skills</button>
+            <button class="tab-btn" data-tab="tools">🧰 Tools</button>
+          </div>
+
+          <!-- ABOUT PANEL -->
+          <div class="tab-panel active" id="about">
+            <h2>Hello i'm Nashrullah 👋</h2>
+            <p>I’m a web developer who loves clean UI, smooth UX, and modern dark interfaces.</p>
+          </div>
+
+          <!-- SKILLS PANEL -->
+          <div class="tab-panel" id="skills">
+            <div class="skill-wrapper">
+              <div class="skill" data-percent="80">
+                <div class="progress-wrapper">
+                  <svg>
+                    <circle class="bg" cx="60" cy="60" r="50"></circle>
+                    <circle class="fg" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <span class="percent-text">0%</span>
+                </div>
+                <p style="text-align: center">Web Developer</p>
+              </div>
+
+              <div class="skill" data-percent="70">
+                <div class="progress-wrapper">
+                  <svg>
+                    <circle class="bg" cx="60" cy="60" r="50"></circle>
+                    <circle class="fg" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <span class="percent-text">0%</span>
+                </div>
+                <p style="text-align: center">Design</p>
+              </div>
+
+              <div class="skill" data-percent="55">
+                <div class="progress-wrapper">
+                  <svg>
+                    <circle class="bg" cx="60" cy="60" r="50"></circle>
+                    <circle class="fg" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <span class="percent-text">0%</span>
+                </div>
+                <p style="text-align: center">Editing</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOOLS PANEL -->
+          <div class="tab-panel" id="tools">
+            <div class="tools-grid">
+              <div class="tool">VS Code</div>
+              <div class="tool">Git</div>
+              <div class="tool">GitHub</div>
+              <div class="tool">HTML</div>
+              <div class="tool">CSS</div>
+              <div class="tool">JavaScript</div>
+              <div class="tool">Figma</div>
+              <div class="tool">Canva</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <p class="desc">Berikut adalah beberapa proyek yang telah saya kerjakan, mencakup pengembangan web dan desain UI/UX.</p>
+
+      <div class="project-tabs">
+        <button class="active" data-target="web">Web Development</button>
+        <button data-target="uiux">Design</button>
+        <button data-target="graphic">Editing</button>
+      </div>
+
+      <!-- WEB -->
+      <div class="project-panel active" id="web">
+        <div class="project-grid">
+          <a href="dummy.html" class="project-card">
+            <img src="img/projects/projek1.png" alt="Project 1" />
+            <div class="project-info">
+              <h3>Project Web 1</h3>
+              <p>Landing Page</p>
+            </div>
+          </a>
+          <a href="#" class="project-card">
+            <img
+              src="https://imgs.search.brave.com/kNupCNiuZj9TboCktfQPCaQarVedXbFme-lw7bIW_Kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNC53/YWxscGFwZXJiZXR0/ZXIuY29tL3dhbGxw/YXBlci82NTYvNzQ1/LzE5Ny9taW5lY3Jh/ZnQtbmF0dXJhbC1z/Y2VuZXJ5LWhkLXdh/bGxwYXBlci1wcmV2/aWV3LmpwZw"
+              alt=""
+            />
+            <div class="project-info">
+              <h3>Project Web 2</h3>
+              <p>None</p>
+            </div>
+          </a>
+          <a href="#" class="project-card">
+            <img
+              src="https://imgs.search.brave.com/kNupCNiuZj9TboCktfQPCaQarVedXbFme-lw7bIW_Kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNC53/YWxscGFwZXJiZXR0/ZXIuY29tL3dhbGxw/YXBlci82NTYvNzQ1/LzE5Ny9taW5lY3Jh/ZnQtbmF0dXJhbC1z/Y2VuZXJ5LWhkLXdh/bGxwYXBlci1wcmV2/aWV3LmpwZw"
+              alt=""
+            />
+            <div class="project-info">
+              <h3>Project Web 3</h3>
+              <p>None</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="project-panel" id="uiux">
+        <div class="project-grid">
+          <a href="galery.html" class="project-card">
+            <img src="img/projects/projek2.png" alt="" />
+            <div class="project-info">
+              <h3>Project Design 1</h3>
+              <p>Design Affinity</p>
+            </div>
+          </a>
+          <a href="#" class="project-card">
+            <img
+              src="https://imgs.search.brave.com/kNupCNiuZj9TboCktfQPCaQarVedXbFme-lw7bIW_Kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNC53/YWxscGFwZXJiZXR0/ZXIuY29tL3dhbGxw/YXBlci82NTYvNzQ1/LzE5Ny9taW5lY3Jh/ZnQtbmF0dXJhbC1z/Y2VuZXJ5LWhkLXdh/bGxwYXBlci1wcmV2/aWV3LmpwZw"
+              alt=""
+            />
+            <div class="project-info">
+              <h3>Project Design 2</h3>
+              <p>None</p>
+            </div>
+          </a>
+          <a href="#" class="project-card">
+            <img
+              src="https://imgs.search.brave.com/kNupCNiuZj9TboCktfQPCaQarVedXbFme-lw7bIW_Kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNC53/YWxscGFwZXJiZXR0/ZXIuY29tL3dhbGxw/YXBlci82NTYvNzQ1/LzE5Ny9taW5lY3Jh/ZnQtbmF0dXJhbC1z/Y2VuZXJ5LWhkLXdh/bGxwYXBlci1wcmV2/aWV3LmpwZw"
+              alt=""
+            />
+            <div class="project-info">
+              <h3>Project Design 3</h3>
+              <p>None</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- GRAPHIC -->
+      <div class="project-panel" id="graphic">
+        <div class="empty-card">
+          <h3>Project Editing</h3>
+          <p>Projects coming soon! Saat ini saya sedang mengerjakan beberapa proyek Editing yang menarik.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <p class="section-desc">Punya pertanyaan atau ingin bekerja sama? Jangan ragu untuk menghubungi saya.</p>
+
+      <div class="contact-container">
+        <!-- INFO -->
+        <div class="contact-info">
+          <h3>Informasi Kontak</h3>
+
+          <div class="info-item">
+            <span>📞</span>
+            <p>+62 851 6908 7636</p>
+          </div>
+
+          <div class="info-item">
+            <span>✉️</span>
+            <p>nashrullahzuhdilbs@gmail.com</p>
+          </div>
+
+          <div class="info-item">
+            <span>📍</span>
+            <p>Medan, Indonesia</p>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form">
+          <div class="form-row">
+            <div>
+              <label>Nama Depan</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Nama Belakang</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label>Email</label>
+              <input type="email" />
+            </div>
+            <div>
+              <label>Nomor Telepon</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div>
+            <label>Pesan</label>
+            <textarea rows="4"></textarea>
+          </div>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <h3>Nash<span>Dev</span></h3>
+          <p>Building modern, clean & responsive websites with passion.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">📸</a>
+            <a href="#">💼</a>
+            <a href="#">🐙</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nashrullah. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="script.js"></script>
+  </body>
+</html>
