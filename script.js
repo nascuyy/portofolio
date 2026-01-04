@@ -174,3 +174,24 @@ window.addEventListener("scroll", () => {
     contactSection.classList.add("show");
   }
 });
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+
+// detect mobile
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+/* --- PROJECT CARD TAP SUPPORT --- */
+if (isMobile) {
+  document.querySelectorAll(".project-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active");
+    });
+  });
+}
+
+/* --- REDUCE MOTION ON MOBILE --- */
+if (isMobile) {
+  document.documentElement.style.scrollBehavior = "auto";
+}
