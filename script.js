@@ -57,41 +57,37 @@ function animateSkills() {
    TYPING EFFECT
 ================================ */
 
-const texts = ["Web Developerr", "UI/UX Designerr", "Editingg"];
+const texts = ["Web Developer", "UI/UX Designer", "Editing"];
 
-let count = 0;
-let index = 0;
+let textIndex = 0;
+let charIndex = 0;
 let isDeleting = false;
 
 const typingElement = document.getElementById("typing");
 
 function typeEffect() {
-  if (!typingElement) return;
+  const currentText = texts[textIndex];
 
-  const fullText = texts[count];
-  let currentText = fullText.substring(0, index);
+  if (!isDeleting) {
+    // typing
+    typingElement.textContent = currentText.slice(0, charIndex + 1);
+    charIndex++;
 
-  typingElement.textContent = currentText;
+    if (charIndex === currentText.length) {
+      setTimeout(() => (isDeleting = true), 1200);
+    }
+  } else {
+    // deleting
+    typingElement.textContent = currentText.slice(0, charIndex - 1);
+    charIndex--;
 
-  let speed = isDeleting ? 60 : 120;
-
-  if (!isDeleting && index < fullText.length) {
-    index++;
-  } else if (isDeleting && index > 0) {
-    index--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
   }
 
-  if (!isDeleting && index === fullText.length) {
-    speed = 1400;
-    isDeleting = true;
-  }
-
-  if (isDeleting && index === 0) {
-    isDeleting = false;
-    count = (count + 1) % texts.length;
-    speed = 400;
-  }
-
+  const speed = isDeleting ? 60 : 120;
   setTimeout(typeEffect, speed);
 }
 

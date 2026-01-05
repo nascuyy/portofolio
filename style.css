@@ -214,6 +214,7 @@ p {
 
 .tab-panel {
   display: none;
+  animation: fadeUp 0.4s ease
 }
 
 .tab-panel.active {
