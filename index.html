@@ -32,7 +32,7 @@
 
             <p>I build clean and responsive websites with modern UI and smooth animations.</p>
 
-            <a href="#" class="btn-outline">Get In Touch</a>
+            <a href="#about" class="btn-outline">Get In Touch</a>
           </div>
 
           <div class="hero-img">
@@ -225,32 +225,32 @@
         </div>
 
         <!-- FORM -->
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/mkogegdn" method="POST">
           <div class="form-row">
             <div>
               <label>Nama Depan</label>
-              <input type="text" />
+              <input type="text" name="firstName" required />
             </div>
             <div>
               <label>Nama Belakang</label>
-              <input type="text" />
+              <input type="text" name="lastName" />
             </div>
           </div>
 
           <div class="form-row">
             <div>
               <label>Email</label>
-              <input type="email" />
+              <input type="email" name="email" required />
             </div>
             <div>
               <label>Nomor Telepon</label>
-              <input type="text" />
+              <input type="text" name="phone" />
             </div>
           </div>
 
           <div>
             <label>Pesan</label>
-            <textarea rows="4"></textarea>
+            <textarea name="message" rows="4" required></textarea>
           </div>
 
           <button type="submit">Kirim Pesan</button>
