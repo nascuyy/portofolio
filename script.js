@@ -57,7 +57,7 @@ function animateSkills() {
    TYPING EFFECT
 ================================ */
 
-const texts = ["Web Developer", "UI/UX Designer", "Editing"];
+const texts = ["Web Developerr", "UI/UX Designerr", "Editingg"];
 
 let count = 0;
 let index = 0;
